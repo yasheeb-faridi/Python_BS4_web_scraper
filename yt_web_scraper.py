@@ -5,7 +5,7 @@ urls = ["https://www.youtube.com/@sharinrehan/shorts"]
 # #  We can use this code for multiple yt channels by putting links in the List array
 
 def main():
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox()    #  # You can also use other browser webDrivers like Edge() or Chrome()
     driver.get(urls[0])
     content = driver.page_source.encode('utf-8').strip()
     soup = BeautifulSoup(content, 'lxml')                   # # lxml html parser
