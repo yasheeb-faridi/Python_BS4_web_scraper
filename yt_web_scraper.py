@@ -21,6 +21,7 @@ def main():
     print(f"Channel name: {channel_name.getText()}")
     for title in titles:
         print('\n{}\t{}\t'.format(title.text, views[i].text))
+        i += 1
 
 
 main()
